@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100px;
+    background-image: linear-gradient(to left, #0f1448, black);
+    color: rgb(153, 169, 245);
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(13219.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    line-height: 2;
+}
+
+.h1 {
+    padding: 20px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.form {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 700px;
+    background: #cccee7;
+    color: black;
+    box-shadow: 0px 0px 10px #c1c1c1;
+}
+
+.form-inner-container {
+    padding: 40px;
+}
+
+.container-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(background_1.jpg);
+    width: cover;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.stored-data {
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+.list td,
+.list th {
+    border: none;
+    padding: 8px;
+}
+
+.list tr:nth-child(odd) {
+    background-color: #f2f2f2;
+    color: black;
+    border-top: 1px solid rgba(155, 152, 152, 0.986);
+}
+
+.list tr:nth-child(odd):hover {
+    background-color: lightgray;
+}
+
+.list tr:nth-child(even):hover {
+    background-color: #cccee7;
+    color: black;
+}
+
+.list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(51, 11, 97);
+    color: white;
+}
+
+.text-primary {
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.text-danger {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.text-primary:hover {
+    background-color: rgb(2, 77, 2);
+}
+
+.text-danger:hover {
+    background-color: rgb(153, 5, 5);
+}
+
+img {
+    width: 100px;
+    height: 80px;
+}
+
+.empty-msg {
+    font-size: 24px;
+    color: rgb(240, 8, 77);
+    text-shadow: 2px 2px 5px rgb(233, 54, 122);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Assets/CSS/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="h1">Crud Operation</h1>
+    </div>
+    <div class="form">
+        <form class="form-container" autocomplete="on" id="form" onsubmit="validateForm(event)">
+            <div class="form-inner-container">
+                <div class="container-header">Students Details</div>
+                <!-- <p id="form-validation"></p> -->
+                <p id="empty-msg" class="empty-msg"></p>
+                <div class="personal-info">
+                    <div class="name">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" />
+                        <p id="p-name"></p>
+                    </div>
+                    <div class="enrollment">
+                        <label for="enrollment">Enrollment-No</label>
+                        <input id="enrollment" type="digit" name="enrollment" />
+                        <p id="p-enroll"></p>
+                    </div>
+                    <div class="emailid">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" class="email" />
+                        <p id="p-email"></p>
+                    </div>
+                    <div class="dob">
+                        <label for="dob">Date Of Birth</label>
+                        <input id="dob" type="date" name="dob" />
+                        <p id="p-dob"></p>
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input id="password" type="password" name="password" class="password" />
+                        <p id="p-password"></p>
+                    </div>
+                </div>
+
+                <div class="college">
+                    <label for="collegelist">College List : </label>
+                    <input list="colleges" id="collegelist" />
+                    <datalist id="colleges">
+			        <option value="GEC Bhavnagar">
+			        <option value="GEC Rajkot">
+			        <option value="BPTI Bhavnagar">
+			        <option value="SSGEC Bhavnagar">
+			        <option value="GEC Bhuj">
+			        <option value="GMIT Bhavnagar">
+		            </datalist>
+                </div>
+                <!-- <label>Upload your photo :</label>
+                <input type="file" name="image" accept="image/png, image/jpg" id="image" /> -->
+
+
+                <div class="Year">
+                    <p> Select a Year :</p>
+                    <div id="radioYear">
+                        <input type="radio" id="1" name="year" value="1" onchange="radioChange(event)">
+                        <label for="1">1</label>
+                        <input type="radio" id="2" name="year" value="2" onchange="radioChange(event)">
+                        <label for="2">2</label>
+                        <input type="radio" id="3" name="year" value="3" onchange="radioChange(event)">
+                        <label for="3">3</label>
+                        <input type="radio" id="4" name="year" value="4" onchange="radioChange(event)">
+                        <label for="4">4</label>
+                    </div>
+                </div>
+
+                <div class="hobby-class">
+                    <p>Hobbies </p>
+                    <input type="checkbox" name="hobby" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" name="hobby" value="drawing">
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" name="hobby" value="singing">
+                    <label for="singing">Singing</label>
+                </div>
+
+                <label for="address">Address</label>
+                <textarea id="address" max-length="200"></textarea>
+
+                <div class="add-data">
+                    <button type="submit" onclick="adddata(), reset()">Submit</button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    <!-- <input type="hidden" id="saveindex" /> -->
+    <div class="stored-data">
+        <table class="list" id="storelist" border="1">
+            <thead>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./Assets/Script/Formscript.js"></script>
+</body>
+
+</html>
